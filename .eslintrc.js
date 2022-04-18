@@ -1,7 +1,7 @@
 module.exports = {
   env: {
-    node: true,
     browser: true,
+    node: true,
     es2021: true,
     jest: true
   },
@@ -30,6 +30,11 @@ module.exports = {
   settings: {
     react: {
       version: 'detect'
+    },
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx']
+      }
     }
   }
 }
