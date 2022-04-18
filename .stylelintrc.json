@@ -1,0 +1,5 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
+  "ignoreFiles": ["build/**/*", "node_modules/**/*", "public/**/*"],
+  "plugins": ["stylelint-scss", "stylelint-order"]
+}

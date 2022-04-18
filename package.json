@@ -3,7 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "yarn run lint:js && yarn run lint:scss",
+    "lint:js": "eslint src/**/*.{js,jsx}",
+    "lint:scss": "stylelint 'src/**/*.scss' --syntax scss -f verbose --color; exit 0",
     "format": "prettier --write .",
     "dev": "vite",
     "build": "vite build",
@@ -26,6 +28,11 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
     "prettier": "^2.6.2",
+    "stylelint": "^14.7.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.2.0",
     "vite": "^2.9.2"
   }
 }
