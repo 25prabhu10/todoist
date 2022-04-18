@@ -1,5 +1,6 @@
 module.exports = {
   env: {
+    node: true,
     browser: true,
     es2021: true,
     jest: true
@@ -12,6 +13,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:react/jsx-runtime',
     'plugin:jsx-a11y/recommended',
     'plugin:import/recommended',
     'plugin:prettier/recommended'
@@ -22,5 +24,12 @@ module.exports = {
     },
     ecmaVersion: 2021,
     sourceType: 'module'
+  },
+
+  plugins: ['react'],
+  settings: {
+    react: {
+      version: 'detect'
+    }
   }
 }
