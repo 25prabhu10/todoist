@@ -1,5 +1,8 @@
 {
   "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
-  "ignoreFiles": ["build/**/*", "node_modules/**/*", "public/**/*"],
-  "plugins": ["stylelint-scss", "stylelint-order"]
+  "ignoreFiles": ["dist/**/*", "node_modules/**/*", "public/**/*"],
+  "plugins": ["stylelint-scss", "stylelint-order"],
+  "rules": {
+    "font-family-no-missing-generic-family-keyword": true
+  }
 }
