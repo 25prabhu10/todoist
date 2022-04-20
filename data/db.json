@@ -1,0 +1,52 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "React",
+      "projectId": 1,
+      "userId": 1
+    }
+  ],
+  "tasks": [
+    {
+      "id": 2,
+      "archived": false,
+      "date": "",
+      "projectId": 1,
+      "task": "Create an App using React",
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "archived": true,
+      "date": "",
+      "projectId": 1,
+      "task": "Create an App using React",
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "archived": false,
+      "date": "19-04-2022",
+      "projectId": 1,
+      "task": "Create an App using React",
+      "userId": 1
+    },
+    {
+      "id": 5,
+      "archived": false,
+      "date": "25-04-2022",
+      "projectId": 1,
+      "task": "Create an App using React",
+      "userId": 1
+    }
+  ],
+  "users": [
+    {
+      "firstName": "Rocky",
+      "lastName": "Bhai",
+      "twitter": "kgfchapters",
+      "id": 1
+    }
+  ]
+}
