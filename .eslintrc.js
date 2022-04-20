@@ -27,6 +27,23 @@ module.exports = {
   },
 
   plugins: ['react'],
+  rules: {
+    'import/order': [
+      'error',
+      {
+        groups: ['builtin', 'external', 'parent', 'index', 'sibling']
+      }
+    ],
+    'guard-for-in': 'error',
+    'no-console': 'warn',
+    'no-bitwise': 'error',
+    'no-eval': 'error',
+    'no-var': 'error',
+    'prefer-const': 'error',
+    'spaced-comment': ['error', 'always', { block: { balanced: true } }],
+    'dot-notation': 'error',
+    'array-callback-return': 'error'
+  },
   settings: {
     react: {
       version: 'detect'
